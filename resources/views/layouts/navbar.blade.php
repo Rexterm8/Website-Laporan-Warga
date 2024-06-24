@@ -63,7 +63,7 @@
                 <li>
                     <form action="{{ route('profile.edit') }}" method="GET" class="dropdown-item">
                         @csrf
-                        <button type="submit" class="btn btn-info container text-center">Profile</button>
+                        <button type="submit" class="btn btn-info container text-center">Profil</button>
                       </form>
                   <form action="{{ route('logout') }}" method="POST" class="dropdown-item">
                     @csrf

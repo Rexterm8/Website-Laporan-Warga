@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Homepage Laporan Warga</title>
+      <title>Homepage AyoLapor!</title>
 
       <!-- Favicon -->
       <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
@@ -53,7 +53,7 @@
                     <rect x="19.7783" y="-0.779297" width="50" height="7.14286" rx="3.57143" transform="rotate(45 19.7783 -0.779297)" fill="white"/>
                 </svg>
                 <h1 class="my-4">
-                    <span>Homepage Laporan Warga</span>
+                    <span>Homepage AyoLapor!</span>
                 </h1>
             </div>
         </div>
@@ -80,7 +80,7 @@
                             </div>
                         </div>
 
-                        <h5 class="logo-title">Laporan Warga</h5>
+                        <h5 class="logo-title">AyoLapor!</h5>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-2" aria-controls="navbar-2" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -95,7 +95,7 @@
                                 <!-- navbar create form hanya muncul jika pengguna adalah user -->
                                 @if(auth()->user()->role == "user")
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" aria-current="page" href="{{ route('laporan.index') }}">Create Form</a>
+                                    <a class="nav-link" aria-current="page" href="{{ route('laporan.index') }}">Buat Laporan</a>
                                 </li>
                                 @endif
                             @else
@@ -106,7 +106,7 @@
                                     <a class="nav-link" aria-current="page" href="{{ route('login.index') }}">Login</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link" aria-current="page" href="{{ route('laporan.index') }}">Create Form</a>
+                                    <a class="nav-link" aria-current="page" href="{{ route('laporan.index') }}">Buat Laporan</a>
                                 </li>
                             @endif
                         </ul>
