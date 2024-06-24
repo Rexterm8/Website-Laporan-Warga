@@ -40,14 +40,14 @@
                      <!-- Looping untuk menampilkan setiap laporan -->
                      @foreach ($laporan as $row)
 
-                        <tr onclick="window.location='/tracking/{{ $row['id'] }}'" class="hovering" >
-                           <td>{{ $row['user']['nama'] }}</td>
-                           <td>{{ \Carbon\Carbon::parse($row['created_at'])->timezone('Asia/Jakarta')->format('d F Y H:i:s') }}</td>
-                           <td><strong>{{ $row['kategori'] }}</strong></td>
+                        <tr class="hovering" >
+                           <td onclick="window.location='/tracking/{{ $row['id'] }}'">{{ $row['user']['nama'] }}</td>
+                           <td onclick="window.location='/tracking/{{ $row['id'] }}'">{{ \Carbon\Carbon::parse($row['created_at'])->timezone('Asia/Jakarta')->format('d F Y H:i:s') }}</td>
+                           <td onclick="window.location='/tracking/{{ $row['id'] }}'"><strong>{{ $row['kategori'] }}</strong></td>
                            <td style="max-width: 25rem;white-space:normal; word-wrap:break-word; cursor: pointer;"><div style="max-height: 4.5rem; overflow:hidden"onclick="this.classList.toggle('expanded')">{{ $row['name'] }}</td>
                            <td>
                               <!-- Tombol untuk melihat lampiran laporan -->
-                              <a href="{{ asset($row['lampiran']) }}" class="btn btn-primary rounded-pill" target="__blank">Lihat</a>
+                              <a href="{{ asset($row['lampiran']) }}" class="btn btn-primary rounded-pill" style="z-index: 100" target="__blank">Lihat</a>
                            </td>
                            <td>
                               <!-- Menampilkan status laporan -->
