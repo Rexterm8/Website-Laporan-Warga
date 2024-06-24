@@ -61,10 +61,11 @@
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <li><hr class="dropdown-divider"></li>
                 <li>
-                    <form action="{{ route('profile.edit') }}" method="GET" class="dropdown-item">
-                        @csrf
-                        <button type="submit" class="btn btn-info container text-center">Profil</button>
-                      </form>
+                    <div class="dropdown-item">
+                        <a href="{{ route('profile.edit') }}" class="btn btn-info container text-center">Profil</a>
+                    </div>
+
+
                   <form action="{{ route('logout') }}" method="POST" class="dropdown-item">
                     @csrf
                     <button type="submit" class="btn btn-danger container text-center">Logout</button>

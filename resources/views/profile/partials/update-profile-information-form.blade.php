@@ -39,15 +39,15 @@
                 <!-- Other profile fields -->
                 @if ($user->foto)
                     <div class="mb-3 position-absolute top-0 end-0 me-5 pe-05">
-                    <label for="profile_photo" class="form-label"><img  src="/storage/{{ $user->foto }}" alt="User-Profile" style="cursor: pointer; margin-top: -103px; margin-right: 150px; width: 7.5cm; height: 7.5cm" class="theme-color-default-img img-fluid avatar avatar-100 avatar-rounded "></label>
+                    <label for="photo" class="form-label"><img id="previewPhoto" src="/storage/{{ $user->foto }}" alt="User-Profile" style="cursor: pointer; margin-top: -103px; margin-right: 150px; width: 7.5cm; height: 7.5cm" class="theme-color-default-img img-fluid avatar avatar-100 avatar-rounded "></label>
                     <div></div>
-                    <input type="file" class="form-control d-none" id="profile_photo" name="foto">
+                    <input type="file" class="form-control d-none" id="photo" name="foto">
                 </div>
                 @else
                 <div class="mb-3 position-absolute top-0 end-0 me-5 pe-05">
-                    <label for="profile_photo" class="form-label"><img  src="../assets/images/avatars/01.png" alt="User-Profile" style="cursor: pointer; margin-top: -103px; margin-right: 150px; width: 7.5cm; height: 7.5cm" class="theme-color-default-img img-fluid avatar avatar-100 avatar-rounded "></label>
+                    <label for="photo" class="form-label"><img id="previewPhoto" src="../assets/images/avatars/01.png" alt="User-Profile" style="cursor: pointer; margin-top: -103px; margin-right: 150px; width: 7.5cm; height: 7.5cm" class="theme-color-default-img img-fluid avatar avatar-100 avatar-rounded "></label>
                     <div></div>
-                    <input type="file" class="form-control d-none" id="profile_photo" name="foto">
+                    <input type="file" class="form-control d-none" id="photo" name="foto">
                 </div>
 
                 @endif

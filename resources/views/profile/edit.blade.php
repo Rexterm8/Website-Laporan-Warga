@@ -37,5 +37,13 @@
         </div>
     </div>
 </div>
-
+<script>
+    photo.onchange = evt => {
+        console.log(1);
+        const [file] = photo.files;
+        if (file) {
+            previewPhoto.src = URL.createObjectURL(file);
+        }
+    };
+</script>
 @endsection
